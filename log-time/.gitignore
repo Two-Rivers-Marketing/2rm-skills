@@ -1,0 +1,5 @@
+# Per-user registry (cache of WMJ + local overlay) — never shared
+projects.yaml
+
+# OS
+.DS_Store
