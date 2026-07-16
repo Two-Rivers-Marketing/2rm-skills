@@ -1,6 +1,17 @@
 ---
 name: log-time
 description: Log Workamajig (WMJ) time entries from natural language, auto-resolving job, task, and service from a local project registry plus the user's own WMJ history. Use when the user wants to log/track hours, "log N hours to this project", fill a timesheet, or mentions Workamajig/WMJ time entry. Directory-aware.
+allowed-tools:
+  - Read
+  - Write
+  - Edit
+  - ToolSearch
+  - mcp__claude_ai_WMJ__get_time_entries
+  - mcp__claude_ai_WMJ__add_time_entry
+  - mcp__claude_ai_WMJ__get_schedule_details
+  - mcp__claude_ai_WMJ__get_project_summary
+  - mcp__plugin_context-mode_context-mode__ctx_execute
+  - mcp__plugin_context-mode_context-mode__ctx_execute_file
 ---
 
 # log-time
