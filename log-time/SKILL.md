@@ -10,8 +10,6 @@ allowed-tools:
   - mcp__claude_ai_WMJ__add_time_entry
   - mcp__claude_ai_WMJ__get_schedule_details
   - mcp__claude_ai_WMJ__get_project_summary
-  - mcp__plugin_context-mode_context-mode__ctx_execute
-  - mcp__plugin_context-mode_context-mode__ctx_execute_file
 ---
 
 # log-time
