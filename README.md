@@ -9,6 +9,7 @@ Each top-level directory is one skill (a `SKILL.md` plus its support files). Ins
 | Skill | What it does | Requires |
 |---|---|---|
 | [`log-time`](log-time/) | Log Workamajig time entries from natural language; optional calendar-driven logging. | WMJ MCP connector. Calendar feature also needs Google Calendar (Calendar scope). |
+| [`wiki`](wiki/) | Bootstrap, curate, and maintain a project wiki — set up project memory, ingest docs, log sessions, lint health, convert existing docs. Triggers on `/wiki`. | None. |
 
 ## Install (for the installing agent)
 
