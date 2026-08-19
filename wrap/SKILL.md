@@ -62,8 +62,3 @@ Report: files written, decisions that should be logged (suggest the wiki's decis
 - Write directly to the current repo's wiki via `/wiki log`. Never write outside the current repo. Cross-project context stays in the digest.
 - Honest struggles. A digest that says "everything went great" when the session churned for an hour poisons any later review.
 - Don't duplicate: if the session already wiki-logged its work (e.g. a `/wiki log` ran), note that in the breadcrumb and only fill gaps.
-
----
-
-> *Adapted from The Three Ms of AI™. © 2026 Nate Herk. All rights reserved.*
-> *The Three Ms of AI™ is a trademark of Nate Herk.*
