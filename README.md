@@ -12,6 +12,7 @@ Each top-level directory is one skill (a `SKILL.md` plus its support files). Ins
 | [`wiki`](wiki/) | Bootstrap, curate, and maintain a project wiki — set up project memory, ingest docs, log sessions, lint health, convert existing docs. Triggers on `/wiki`. | None. |
 | [`wrap`](wrap/) | Wrap a work session — digest the session to the project's wiki, update `STATE.md`, log a breadcrumb. Triggers on `/wrap`. | `wiki` skill (for `/wiki log`). |
 | [`unslop`](unslop/) | Cut AI tells from any writing — edit text to remove AI patterns and add human voice. | None. |
+| [`configure-deployments`](configure-deployments/) | Set up GitHub Actions deploys (staging on push, production by hand) from a repo to its DigitalOcean droplet behind `2RM-Hosting-Firewall`. Triggers on `/configure-deployments`. | `gh`, `jq`, a DO API token, and SSH from the office network. Kit lives in `Two-Rivers-Marketing/.github` `deploy/`. |
 
 ## Install (for the installing agent)
 
