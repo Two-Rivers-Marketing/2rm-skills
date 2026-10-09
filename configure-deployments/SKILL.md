@@ -111,3 +111,18 @@ On the user's go:
 Through the project's own docs process (its CLAUDE.md says which: `/wiki`, `/wrap`, …): a decision recording CI deploys, and the runbook updated so CI is the normal path and manual rsync the office-only fallback. Include the workflows, environments, the server steps, the first run IDs, and anything step 3 added to the excludes. Hide superseded workflows with `gh workflow disable`.
 
 **Done when** someone reading only the project's docs can tell how a deploy happens, where its settings live, and how to deploy by hand.
+
+### 9. CLAUDE.md
+
+Add (or replace) a short `## Deployments` section in the repo's root `CLAUDE.md`, filled with this repo's branches. Keep it this brief; details belong in the runbook from step 8.
+
+```markdown
+## Deployments
+
+- **Staging** auto-deploys on push to `<staging>` (GitHub Actions).
+- **Production** deploys manually: `gh workflow run deploy-production.yml --ref <default>` (or Actions → Deploy production).
+- No permission prompt needed for either. When the user says to merge or push to a deploy branch, that is the go-ahead for the deploy it triggers.
+- Runbook: <link to the step 8 runbook>.
+```
+
+**Done when** `CLAUDE.md` has the section with real branch names and a working runbook link, and it's committed alongside step 8's docs.
