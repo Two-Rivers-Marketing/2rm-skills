@@ -13,6 +13,7 @@ Each top-level directory is one skill (a `SKILL.md` plus its support files). Ins
 | [`wrap`](wrap/) | Wrap a work session — digest the session to the project's wiki, update `STATE.md`, log a breadcrumb. Triggers on `/wrap`. | `wiki` skill (for `/wiki log`). |
 | [`unslop`](unslop/) | Cut AI tells from any writing — edit text to remove AI patterns and add human voice. | None. |
 | [`configure-deployments`](configure-deployments/) | Set up GitHub Actions deploys (staging on push, production by hand) from a repo to its DigitalOcean droplet behind `2RM-Hosting-Firewall`. Triggers on `/configure-deployments`. | `gh`, `jq`, a DO API token, and SSH from the office network. Kit lives in `Two-Rivers-Marketing/.github` `deploy/`. |
+| [`bug-herd-triage`](bug-herd-triage/) | Work a BugHerd project's open feedback end to end — triage, fix in batches, ship to staging, verify with before/after screenshots, move verified tickets to Review. Triggers on `/bug-herd-triage`. | BugHerd MCP connector, `playwright-cli`. |
 
 ## Install (for the installing agent)
 
